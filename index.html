@@ -10,9 +10,8 @@
     </head>
 
     <body>
-        <form action="/" method="post">
+        <form id="myform" action="/" method="post">
             <input type="text" id="text" name="text" autocomplete="off" value="{{ value }}">
-            <input type="submit" value="Calculate">
         </form>
 
         <div id="container">
@@ -48,6 +47,7 @@
                 <button value="%">mod</button>
                 <button value="0">0</button>
                 <button value=".">.</button>
+                <button onclick="!this.form && document.getElementById('myform').submit()">=</button>
             </div>
         </div>
 
